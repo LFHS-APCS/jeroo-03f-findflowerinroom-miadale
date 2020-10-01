@@ -9,7 +9,7 @@ public class Jeroo extends JerooBase {
     public void findFlowerInRoom() 
     {
         goToOrgin();
-        while(!Facing(SOUTH)){
+        while(!Facing(SOUTH))
             turn(LEFT);
             
         while(!isFlower(HERE)){
