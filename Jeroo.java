@@ -6,13 +6,14 @@ public class Jeroo extends JerooBase {
     
     /**
      */
-    public void findFlowerInRoom() {
+    public void findFlowerInRoom() 
+    {
         goToOrgin();
         while(!Facing(SOUTH)){
             turn(LEFT);
-        }
+            
         while(!isFlower(HERE)){
-            if(!isWater(HERE)){
+            if(!isWater(AHEAD))
                 hop();
             else if (isFacing(SOUTH)){
                 turn(LEFT);
